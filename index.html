@@ -9,11 +9,178 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css" >
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Header -->
+    <header id="header-container">
+      <div class="container">
+        <div class="row flex-items-xs-middle flex-items-xs-between">
+          <div class="col-xs-3">
+            <h1>Sunedu</h1>
+          </div>
+          <div class="col-xs-3 text-xs-right">
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navMenu">
+              &#9776;
+            </button>
+            <a class="login hidden-xs-down text-uppercase font-weight-bold pull-sm-right" href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Menú -->
+    <div class="menu-container">
+       <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 offset-xs-2 col-md-4 offset-md-0">
+              <ul class="nav navbar-nav">
+                <li class="nav-item text-xs-center active">
+                  <a href="#" class="nav-link" >Home</a>
+                </li>
+                <li class="nav-item text-xs-center">
+                  <a href="#" class="nav-link">Catálogo</a>
+                </li>
+                <li class="nav-item text-xs-center">
+                  <a href="#" class="nav-link">Carrito</a>
+                </li>
+                <li class="nav-item hidden-sm-up text-xs-center">
+                  <a href="#" class="nav-link">Login</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 offset-md-2 hidden-xs-down">
+              <form >
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up "></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="search-bar" class="container hidden-sm-up" >
+        <div class="row">
+          <div class="col-xs">
+            <form >
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                      <span class="hidden-sm-down">Buscar</span>
+                      <i class="fa fa-search hidden-md-up "></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /Menú -->
+    
+    <!-- carousel -->
+    <div id="carousel-container">
+      <div id="productosCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#productosCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#productosCarousel" data-slide-to="1"></li>
+          <li data-target="#productosCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="images/producto.svg" alt="Primer producto">
+            <div class="carousel-caption">
+              <h4>Primer Producto</h4>
+              <p class="hidden-sm-down">Descripción del primer producto</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/producto.svg" alt="Segundo producto">
+            <div class="carousel-caption">
+              <h4>Segundo Producto</h4>
+              <p class="hidden-sm-down">Descripción del segundo producto</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/producto.svg" alt="Tercer producto">
+            <div class="carousel-caption">
+              <h4>Tercer Producto</h4>
+              <p class="hidden-sm-down">Descripción del tercer producto</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#productosCarousel" role="button" data-slide="prev">
+          <span class="icon-prev" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#productosCarousel" role="button" data-slide="next">
+          <span class="icon-next" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+    <!-- /carousel -->
+
+    <!-- Info -->
+
+    <div id="info-container">
+      <div class="container">
+        <div class="row flex-items-xs-middle">
+          <div class="col-xs-12 col-md-4">
+            <img src="images/calidad.png" alt="Calidad" class="img-fluid">
+            <h4>Calidad</h4>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <img src="images/envio.png" alt="Envío" class="img-fluid">
+            <h4>Envío gratis</h4>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <img src="images/soporte.png" alt="Soporte" class="img-fluid">
+            <h4>Soporte 24hs</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Info -->
+
+    <!-- Footer -->
+
+    <footer id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <form id="suscribeForm" action="#" method="POST"> 
+              <h4 class="text-uppsercase">¿Quieres recibir todas las novedades?</h4>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+                <small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-primary form-text">Suscribirme</button>
+            </form>
+          </div>
+          <div class="col-md-3 offset-md-5">
+            
+          </div>
+        </div>        
+      </div>
+    </footer>
+
+    <!-- /Footer -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
